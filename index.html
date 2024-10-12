@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>罗马帝国 - 组织宣传</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"> 
+  <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; 
+            color: #fff;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.1); 
+            text-align: center;
+            padding: 40px 0;
+            position: relative;
+            border-bottom: 1px solid #fff;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #fff;
+        }
+        header h2 {
+            font-size: 1.2em;
+            margin: 0;
+            color: #fff;
+            margin-top: 10px;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+            border-bottom: 1px solid #fff;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #e74c3c;
+        }
+        .container {
+            width: 80%;
+            margin: 80px auto 0; /* Margin for the fixed navbar */
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+        .character img {
+    width: 150px; /* 设置固定宽度 */
+    height: 100px; /* 设置固定高度 */
+    object-fit: cover; /* 保持比例并裁剪 */
+    margin-right: 15px;
+}
+        .content {
+            margin: 20px 0;
+        }
+        .content h2 {
+            color: #e74c3c;
+        }
+        .character-section {
+            margin: 40px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 8px;
+            text-align: left;
+        }
+        .character-section h2 {
+            color: #e74c3c; 
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .character {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .character img {
+    width: 150px; /* 设置固定宽度 */
+    height: 30px; /* 设置固定高度 */
+    object-fit: cover; /* 保持比例并裁剪 */
+    margin-right: 15px;
+}
+        .character h3 {
+            color: #fff;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1); 
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            border-top: 1px solid #fff;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #000;
+            background: #e74c3c; 
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .btn:hover {
+            background: #c0392b; 
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 0.9em;
+            }
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+            .character img {
+                width: 60px;
+            }
+            .character h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style> 
+ </head> 
+ <body> 
+  <nav> <a href="#content">主页</a> <a href="#king-introduction">国王介绍</a> <a href="#contact">联系我们</a> 
+  </nav> 
+  <header> 
+   <h1>欢迎来到罗马共和国</h1> 
+   <h2>Welcome to the Roman Republic</h2> 
+  </header> 
+  <div class="container" id="content"> 
+   <div class="content"> 
+    <h2>罗马共和国</h2> <a href="#contact" class="btn">联系我们</a> 
+   </div> 
+   <div class="character-section" id="king-introduction"> 
+    <h2>国王介绍</h2> 
+    <div class="character"> 
+     <img src="https://hoi4.paradoxwikis.com/images/2/29/United_Kingdom.png" alt="英国国王"> 
+     <h3>英国国王 <em>King of Britian</em></h3> 
+     <p>英国国王是英国及其他英联邦国家的最高元首，负责国家的许多正式职责。</p> 
+    </div> 
+    <div class="character"> 
+     <img src="https://static.wikia.nocookie.net/kaiserreich/images/0/0c/National_France_flag_new.png/revision/latest?cb=20201105102724" alt="法国皇帝"> 
+     <h3>法国皇帝 <em>Emperor of France</em></h3> 
+    </div> 
+    <div class="character"> 
+     <img src="https://hoi4.paradoxwikis.com/images/b/b8/Upper_Volta.png" alt="德国皇帝"> 
+     <h3>德国皇帝 <em>Emperor of Germany</em></h3> 
+    </div> 
+    <div class="character"> 
+     <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Italy_%281861-1946%29_crowned.svg" alt="意大利国王"> 
+     <h3>意大利国王 <em>King of Italy</em></h3> 
+    </div> 
+    <div class="character"> 
+     <img src="https://hoi4.paradoxwikis.com/images/6/63/Russian_Empire.png" alt="俄罗斯皇帝"> 
+     <h3>俄罗斯皇帝 <em>Emperor of Russia</em></h3> 
+    </div> 
+    <div class="character"> 
+     <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_the_Habsburg_Monarchy.svg" alt="奥地利皇帝"> 
+     <h3>奥地利皇帝 <em>Emperor of Austria</em></h3> 
+    </div> 
+    <div class="character"> 
+     <img src="https://hoi4.paradoxwikis.com/images/9/97/Chinese_Empire.png" alt="中国皇帝"> 
+     <h3>中国皇帝 <em>Emperor of China</em></h3> 
+    </div> 
+    <div class="character"> 
+     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="美国总统"> 
+     <h3>美国皇帝 <em>Emperor of America</em></h3> 
+    </div> 
+    <div class="character"> 
+     <img src="https://static.wikia.nocookie.net/kaiserreich/images/6/69/Denmark.png/revision/latest?cb=20180606091811" alt="丹麦国王"> 
+     <h3>丹麦国王 <em>King of Denmark</em></h3> 
+    </div> 
+    <div class="character"> 
+     <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Flag_of_Cross_of_Burgundy.svgtionalist_Spain.png" alt="西班牙国王"> 
+     <h3>西班牙国王 <em>King of Spain</em></h3> 
+    </div> 
+    <div class="character"> 
+     <img src="https://static.wikia.nocookie.net/kaiserreich/images/1/12/Portugal.png/revision/latest?cb=20180216212656" alt="葡萄牙国王"> 
+     <h3>葡萄牙国王 <em>King of Portugal</em></h3> 
+    </div> 
+    <div class="character"> 
+     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Prinsenvlag.svg" alt="荷兰国王"> 
+     <h3>荷兰国王 <em>King of the Netherlands</em></h3> 
+    </div> 
+    <div class="character"> 
+     <img src="https://hoi4.paradoxwikis.com/images/2/2f/British_Raj.png" alt="印度皇帝"> 
+     <h3>印度皇帝 <em>Emperor of India</em></h3> 
+    </div> 
+    <div class="character"> 
+     <img src="https://static.wikia.nocookie.net/kaiserreich/images/8/8a/Egypt_Flag.png/revision/latest?cb=20171014171158" alt="埃及苏丹"> 
+     <h3>埃及国王 <em>Sultan of Egypt</em></h3> 
+    </div> 
+    <div class="character"> 
+     <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_the_Ottoman_Empire_%281844%E2%80%931922%29.svg" alt="奥斯曼皇帝"> 
+     <h3>奥斯曼皇帝 <em>Sultan of the Ottoman Empire</em></h3> 
+    </div> 
+   </div> 
+  </div> 
+  <footer> 
+   <p>版权所有 © 2024 罗马共和国</p> 
+  </footer> 
+ 
+</body></html>
