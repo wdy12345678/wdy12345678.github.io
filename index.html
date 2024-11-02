@@ -247,14 +247,45 @@
     </div> 
     </div> 
   </div> 
+<div class="social-share">
+    <h3>分享这篇文章：</h3>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_PAGE_URL" target="_blank">分享到Facebook</a>
+    <a href="https://twitter.com/intent/tweet?url=YOUR_PAGE_URL&text=Check this out!" target="_blank">分享到Twitter</a>
+</div>
 
-  <div class="contact-section" id="contact"> <!-- 添加联系部分 -->
+<div class="contact-section" id="contact">
     <h2>联系我们</h2>
-    <p>您可以通过电子邮件联系我：<a href="mailto:wdy2406709310@gmail.com">wdy2406709310@gmail.com</a></p>
-  </div>
+    <form id="contactForm">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">电子邮件:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">消息:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <input type="submit" value="提交">
+    </form>
+    <div id="formResponse"></div>
+</div>
 
-  <footer> 
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.url = window.location.href;  
+        this.page.identifier = document.title;  
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://romerepublic.disqus.com/embed.js'; 
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+
+<footer> 
     <p>版权所有 © 2024 罗马共和国</p> 
-  </footer> 
-</body>
-</html>
+</footer>
+
